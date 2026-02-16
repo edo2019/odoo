@@ -102557,3 +102557,62 @@ DETAIL:  Key (code, company_id)=(CHARL, 2) already exists.
 2026-02-16 13:53:50,292 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
 2026-02-16 13:53:50,302 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC69']]) 
 2026-02-16 13:53:50,302 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:50] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.053
+2026-02-16 13:53:52,365 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:52,365 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:52,380 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC70']]) 
+2026-02-16 13:53:52,381 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:52] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.050
+2026-02-16 13:53:54,452 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:54,452 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:54,452 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC71']]) 
+2026-02-16 13:53:54,464 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:54] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.011 0.038
+2026-02-16 13:53:56,547 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:56,547 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:56,547 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC72']]) 
+2026-02-16 13:53:56,563 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:56] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.048
+2026-02-16 13:53:58,346 2056 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2026-02-16 13:53:58,614 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:58,614 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:58,614 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC73']]) 
+2026-02-16 13:53:58,631 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:58] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.001 0.050
+2026-02-16 13:54:00,697 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:00,697 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:00,697 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC74']]) 
+2026-02-16 13:54:00,716 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:00] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.001 0.050
+2026-02-16 13:54:02,812 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:02,812 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:02,812 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC75']]) 
+2026-02-16 13:54:02,812 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:02] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.055
+2026-02-16 13:54:04,908 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:04,908 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:04,908 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC76']]) 
+2026-02-16 13:54:04,908 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:04] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.048
+2026-02-16 13:54:06,995 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:07,011 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:07,011 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC77']]) 
+2026-02-16 13:54:07,011 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:07] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.064
+2026-02-16 13:54:08,865 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:08] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.001 50.066
+2026-02-16 13:54:09,087 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:09,089 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:09,091 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC78']]) 
+2026-02-16 13:54:09,095 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:09] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.002 0.046
+2026-02-16 13:54:09,180 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:11,131 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:11,139 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:11,139 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC79']]) 
+2026-02-16 13:54:11,147 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:11] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.050
+2026-02-16 13:54:13,250 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:13,250 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:13,250 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC80']]) 
+2026-02-16 13:54:13,250 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:13] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.002 0.059
+2026-02-16 13:54:15,490 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:15,492 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:15,492 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC81']]) 
+2026-02-16 13:54:15,492 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:15] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.173
+2026-02-16 13:54:17,579 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:17,581 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:17,582 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC82']]) 
+2026-02-16 13:54:17,585 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:17] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.004 0.055
+2026-02-16 13:54:19,660 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:19,660 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:54:19,660 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC83']]) 
+2026-02-16 13:54:19,676 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:54:19] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.064
