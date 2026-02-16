@@ -102474,3 +102474,86 @@ DETAIL:  Key (code, company_id)=(CHARL, 2) already exists.
 2026-02-16 13:53:14,716 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
 2026-02-16 13:53:14,721 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC52']]) 
 2026-02-16 13:53:14,722 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:14] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.054
+2026-02-16 13:53:16,782 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:16,798 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:16,798 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC53']]) 
+2026-02-16 13:53:16,798 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:16] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.048
+2026-02-16 13:53:18,799 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:18] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.000 50.020
+2026-02-16 13:53:18,799 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:18,849 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:18,849 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:18,849 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC54']]) 
+2026-02-16 13:53:18,849 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:18] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.034
+2026-02-16 13:53:20,948 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:20,948 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:20,948 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC55']]) 
+2026-02-16 13:53:20,948 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:20] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.033
+2026-02-16 13:53:23,015 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:23,026 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:23,026 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC56']]) 
+2026-02-16 13:53:23,030 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:23] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.004 0.047
+2026-02-16 13:53:25,115 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:25,118 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:25,118 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC57']]) 
+2026-02-16 13:53:25,118 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:25] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.010 0.043
+2026-02-16 13:53:27,281 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:27,281 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:27,281 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC58']]) 
+2026-02-16 13:53:27,298 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:27] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.149
+2026-02-16 13:53:29,413 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:29,418 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:29,419 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC59']]) 
+2026-02-16 13:53:29,423 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:29] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.006 0.072
+2026-02-16 13:53:31,492 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:31,494 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:31,494 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC60']]) 
+2026-02-16 13:53:31,501 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:31] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.004 0.048
+2026-02-16 13:53:33,598 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:33,599 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:33,599 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC61']]) 
+2026-02-16 13:53:33,599 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:33] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.001 0.064
+2026-02-16 13:53:35,265 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:35] "POST /longpolling/poll HTTP/1.1" 200 - 8 0.007 50.024
+2026-02-16 13:53:35,599 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:35,665 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:35,665 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:35,665 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC62']]) 
+2026-02-16 13:53:35,681 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:35] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.050
+2026-02-16 13:53:37,765 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:37,765 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:37,765 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC63']]) 
+2026-02-16 13:53:37,765 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:37] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.017 0.033
+2026-02-16 13:53:39,845 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:39,847 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:39,849 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC64']]) 
+2026-02-16 13:53:39,849 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:39] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.066
+2026-02-16 13:53:41,922 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:41,922 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:41,922 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC65']]) 
+2026-02-16 13:53:41,922 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:41] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.047
+2026-02-16 13:53:44,022 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:44,024 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:44,024 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC66']]) 
+2026-02-16 13:53:44,024 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:44] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.016 0.043
+2026-02-16 13:53:45,799 2056 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2026-02-16 13:53:45,806 2056 INFO arusha odoo.addons.base.models.ir_cron: Starting job `Warehouse Receipt Sending Cron`. 
+2026-02-16 13:53:45,817 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:45,818 2056 DEBUG arusha odoo.addons.base.models.ir_cron: cron.object.execute('arusha', 1, '*', 'Warehouse Receipt Sending Cron', 464) 
+2026-02-16 13:53:45,831 2056 DEBUG arusha odoo.addons.base.models.ir_cron: 0.012s (cron Warehouse Receipt Sending Cron, server action 464 with uid 1) 
+2026-02-16 13:53:45,844 2056 INFO arusha odoo.addons.base.models.ir_cron: Job `Warehouse Receipt Sending Cron` done. 
+2026-02-16 13:53:45,847 2056 INFO arusha odoo.addons.base.models.ir_cron: Starting job `Licence Deactivation Cron`. 
+2026-02-16 13:53:45,847 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:45,847 2056 DEBUG arusha odoo.addons.base.models.ir_cron: cron.object.execute('arusha', 1, '*', 'Licence Deactivation Cron', 463) 
+2026-02-16 13:53:45,876 2056 DEBUG arusha odoo.addons.base.models.ir_cron: 0.028s (cron Licence Deactivation Cron, server action 463 with uid 1) 
+2026-02-16 13:53:45,878 2056 INFO arusha odoo.addons.base.models.ir_cron: Job `Licence Deactivation Cron` done. 
+2026-02-16 13:53:46,113 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:46,113 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:46,113 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC67']]) 
+2026-02-16 13:53:46,113 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:46] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.046
+2026-02-16 13:53:48,179 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:48,195 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:48,195 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC68']]) 
+2026-02-16 13:53:48,195 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:48] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.002 0.060
+2026-02-16 13:53:50,292 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:50,292 2056 DEBUG arusha odoo.modules.registry: Multiprocess signaling check: [Registry - 3 -> 3] [Cache - 14 -> 14] 
+2026-02-16 13:53:50,302 2056 DEBUG arusha odoo.api: call stock.warehouse().search([['code', '=', 'TANEC69']]) 
+2026-02-16 13:53:50,302 2056 INFO arusha werkzeug: 127.0.0.1 - - [16/Feb/2026 13:53:50] "POST /xmlrpc/2/object HTTP/1.1" 200 - 4 0.000 0.053
