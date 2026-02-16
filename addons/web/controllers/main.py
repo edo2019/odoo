@@ -169,7 +169,15 @@ def ensure_db(redirect='/web/database/selector'):
 
     # if no database provided and no database in session, use monodb
     if not db:
-        db = db_monodb(request.httprequest)
+        # Avoid redirect loop when session had a broken db (e.g. Windows collation)
+        if getattr(request.session, '_force_selector', False):
+            try:
+                delattr(request.session, '_force_selector')
+            except AttributeError:
+                pass
+            db = None
+        else:
+            db = db_monodb(request.httprequest)
 
     # if no db can be found til here, send to the database selector
     # the database selector will redirect to database manager if needed
@@ -1081,29 +1089,53 @@ class Database(http.Controller):
         d.setdefault('manage',True)
         d['insecure'] = odoo.tools.config.verify_admin_password('admin')
         d['list_db'] = odoo.tools.config['list_db']
-        d['langs'] = odoo.service.db.exp_list_lang()
-        d['countries'] = odoo.service.db.exp_list_countries()
         d['pattern'] = DBNAME_PATTERN
-        # databases list
         d['databases'] = []
+        d['incompatible_databases'] = []
         try:
-            d['databases'] = http.db_list()
-            d['incompatible_databases'] = odoo.service.db.list_db_incompatible(d['databases'])
-        except odoo.exceptions.AccessDenied:
-            monodb = db_monodb()
-            if monodb:
-                d['databases'] = [monodb]
+            d['langs'] = odoo.service.db.exp_list_lang()
+            d['countries'] = odoo.service.db.exp_list_countries()
+            try:
+                d['databases'] = http.db_list()
+                d['incompatible_databases'] = odoo.service.db.list_db_incompatible(d['databases'])
+            except odoo.exceptions.AccessDenied:
+                monodb = db_monodb()
+                if monodb:
+                    d['databases'] = [monodb]
+        except Exception as e:
+            _logger.exception('Database selector failed: %s', e)
+            d['selector_error'] = str(e)
+            d['langs'] = d.get('langs') or []
+            d['countries'] = d.get('countries') or []
         return env.get_template("database_manager.html").render(d)
 
     @http.route('/web/database/selector', type='http', auth="none")
     def selector(self, **kw):
         request._cr = None
-        return self._render_template(manage=False)
+        try:
+            return self._render_template(manage=False)
+        except Exception as e:
+            _logger.exception('Database selector crashed: %s', e)
+            import traceback
+            return werkzeug.wrappers.Response(
+                '<h1>Database selector error</h1><pre style="white-space:pre-wrap;">%s</pre>' % werkzeug.utils.escape(traceback.format_exc()),
+                status=500,
+                content_type='text/html; charset=utf-8'
+            )
 
     @http.route('/web/database/manager', type='http', auth="none")
     def manager(self, **kw):
         request._cr = None
-        return self._render_template()
+        try:
+            return self._render_template()
+        except Exception as e:
+            _logger.exception('Database manager crashed: %s', e)
+            import traceback
+            return werkzeug.wrappers.Response(
+                '<h1>Database manager error</h1><pre style="white-space:pre-wrap;">%s</pre>' % werkzeug.utils.escape(traceback.format_exc()),
+                status=500,
+                content_type='text/html; charset=utf-8'
+            )
 
     @http.route('/web/database/create', type='http', auth="none", methods=['POST'], csrf=False)
     def create(self, master_pwd, name, lang, password, **post):

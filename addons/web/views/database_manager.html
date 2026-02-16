@@ -143,6 +143,9 @@
                     {% if error %}
                         <div class="alert alert-danger">{{ error }}</div>
                     {% endif %}
+                    {% if selector_error %}
+                        <div class="alert alert-warning">Could not load database list: {{ selector_error }}</div>
+                    {% endif %}
                     {% if list_db and databases %}
                         <div class="list-group">
                             {% for db in databases %}

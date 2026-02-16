@@ -1368,7 +1368,18 @@ class Root(object):
                 db = None
 
         if not db:
-            httprequest.session.db = db_monodb(httprequest)
+            # Never auto-select a db when user is on database selector/manager - serve the page
+            path = (httprequest.path or '').rstrip('/')
+            if path in ('/web/database/selector', '/web/database/manager'):
+                db = None
+            else:
+                monodb = db_monodb(httprequest)
+                if getattr(httprequest.session, '_force_selector', False):
+                    db = None
+                else:
+                    db = monodb
+            if db:
+                httprequest.session.db = db
 
     def setup_lang(self, httprequest):
         if "lang" not in httprequest.session.context:
@@ -1484,19 +1495,10 @@ class Root(object):
                         with odoo.tools.mute_logger('odoo.sql_db'):
                             ir_http = request.registry['ir.http']
                     except (AttributeError, psycopg2.OperationalError, psycopg2.ProgrammingError):
-                        # psycopg2 error or attribute error while constructing
-                        # the registry. That means either
-                        # - the database probably does not exists anymore
-                        # - the database is corrupted
-                        # - the database version doesnt match the server version
-                        # Log the user out and fall back to nodb
+                        # DB missing/corrupted (e.g. Windows collation). Clear session and send
+                        # user straight to database selector to avoid redirect loop.
                         request.session.logout()
-                        if request.httprequest.path == '/web':
-                            # Internal Server Error
-                            raise
-                        else:
-                            # If requesting /web this will loop
-                            result = _dispatch_nodb()
+                        result = werkzeug.utils.redirect('/web/database/selector', 303)
                     else:
                         result = ir_http._dispatch()
                 else:

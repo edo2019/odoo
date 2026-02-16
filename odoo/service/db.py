@@ -104,11 +104,15 @@ def _create_empty_database(name):
         else:
             cr.autocommit(True)     # avoid transaction block
 
-            # 'C' collate is only safe with template0, but provides more useful indexes
-            collate = "LC_COLLATE 'C'" if chosen_template == 'template0' else ""
+            # 'C' collate/ctype required with template0; on Windows avoids "collations with
+            # different collate and ctype values are not supported on this platform"
+            if chosen_template == 'template0':
+                locale_opts = "LC_COLLATE 'C' LC_CTYPE 'C'"
+            else:
+                locale_opts = ""
             cr.execute(
                 """CREATE DATABASE "%s" ENCODING 'unicode' %s TEMPLATE "%s" """ %
-                (name, collate, chosen_template)
+                (name, locale_opts, chosen_template)
             )
 
 @check_db_management_enabled
@@ -393,22 +397,30 @@ def list_db_incompatible(databases):
     incompatible_databases = []
     server_version = '.'.join(str(v) for v in version_info[:2])
     for database_name in databases:
-        with closing(db_connect(database_name).cursor()) as cr:
-            if odoo.tools.table_exists(cr, 'ir_module_module'):
-                cr.execute("SELECT latest_version FROM ir_module_module WHERE name=%s", ('base',))
-                base_version = cr.fetchone()
-                if not base_version or not base_version[0]:
-                    incompatible_databases.append(database_name)
-                else:
-                    # e.g. 10.saas~15
-                    local_version = '.'.join(base_version[0].split('.')[:2])
-                    if local_version != server_version:
+        try:
+            with closing(db_connect(database_name).cursor()) as cr:
+                if odoo.tools.table_exists(cr, 'ir_module_module'):
+                    cr.execute("SELECT latest_version FROM ir_module_module WHERE name=%s", ('base',))
+                    base_version = cr.fetchone()
+                    if not base_version or not base_version[0]:
                         incompatible_databases.append(database_name)
-            else:
-                incompatible_databases.append(database_name)
+                    else:
+                        # e.g. 10.saas~15
+                        local_version = '.'.join(base_version[0].split('.')[:2])
+                        if local_version != server_version:
+                            incompatible_databases.append(database_name)
+                else:
+                    incompatible_databases.append(database_name)
+        except Exception as e:
+            # e.g. Windows: psycopg2.OperationalError "collations with different collate and ctype..."
+            _logger.warning('Cannot connect to database %s: %s', database_name, e)
+            incompatible_databases.append(database_name)
     for database_name in incompatible_databases:
         # release connection
-        odoo.sql_db.close_db(database_name)
+        try:
+            odoo.sql_db.close_db(database_name)
+        except Exception:
+            pass
     return incompatible_databases
 
 
